@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- All -->
+    <string name="allAppName">QR Code Hunt</string>
+    <string name="allClueNumberTitle">Clue Number %1$d</string>
+    <string name="allFinish">Finish</string>
+    <string name="allBack">Back</string>
+    <string name="allNext">Next</string>
+    <string name="allScan">Scan</string>
+    <string name="allNumber1">1</string>
+    <string name="allNumber2">2</string>
+    <string name="allNumber3">3</string>
+    <string name="allNumber4">4</string>
+    <string name="allNumber5">5</string>
+    <string name="allNumber6">6</string>
+    <string name="allNumber7">7</string>
+    <string name="allNumber8">8</string>
+    <string name="allNumber9">9</string>
+    <string name="allNumber10">10</string>
+    <string name="allCluePlaceholder">This is placeholder text for where a clue will be. It may be really long or may be really short so this string should be long enough to cover it.</string>
+    <string name="allNo">No</string>
+    <string name="allYes">Yes</string>
+
+    <!-- Activity Home -->
+    <string name="homeBeginHunt">Begin Hunt</string>
+    <string name="homeResumeHunt">Resume Hunt</string>
+    <string name="homeSetClues">Set Clues</string>
+    <string name="homeHuntStarted">The hunt has already started, solve all of the clues to enable this menu.</string>
+    <string name="homeHuntNotStarted">A hunt has not been started.</string>
+
+    <!-- Activity Set Clues -->
+    <string name="setCluesNotSet">Clue Not Set</string>
+    <string name="setCluesResetAll">Reset All</string>
+    <string name="setCluesResetAllWarning">This will reset all clues and assigned codes, are you sure you wish to do this?</string>
+    <string name="setCluesCodeUsed">You have already assigned the code \'%1$s\' to a clue! Use another code.</string>
+    <string name="setCluesRemoveCode">The code \'%1$s\' has already been assigned to this clue, do you wish to remove this and scan another?</string>
+    <string name="setCluesCodeOK">Code \'%1$s\' scanned and assigned to clue %2$d.</string>
+    <string name="setCluesBeginHunt">Are you sure you are ready to save all of the data and begin the hunt?</string>
+    <string name="setCluesCantFinish">There\'s something missing from the data, make sure you leave no gaps in the list.</string>
+    <string name="setCluesDone">Done</string>
+    <string name="setCluesClear">Clear</string>
+
+    <!-- Hunt -->
+    <string name="huntFinalClueTitle">Final Clue</string>
+    <string name="huntSolvedMessage">Well done!! You\'ve solved the clue and found the code.</string>
+    <string name="huntErrorMessage">This is the wrong code, place it back and keep looking!</string>
+    <string name="huntFinishedMessage">You\'ve solved all the clues. Tap anywhere to finish.</string>
+    <string name="huntFinishedTitle">Congratulations</string>
+
+    <!-- Data Storage -->
+    <string name="dataClueData">hunt_data</string>
+    <string name="dataHuntStarted">hunt_started</string>
+    <string name="dataCurrentClue">hunt_on_clue</string>
+
+    <!-- Barcode Reading API -->
+    <string name="scanCode">Scan Code</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+</resources>

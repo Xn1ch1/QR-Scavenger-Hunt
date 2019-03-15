@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/huntLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_split_background"
+    tools:context=".ActivityHunt">
+
+    <include layout="@layout/fragment_guides" />
+
+    <TextView
+        android:id="@+id/huntClueTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/allClueNumberTitle"
+        android:textSize="@dimen/huntClueTitleSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH15"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toStartOf="@id/guideV5"
+        app:layout_constraintTop_toTopOf="@id/guideH5" />
+
+    <TextView
+        android:id="@+id/huntClueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/allCluePlaceholder"
+        android:textSize="@dimen/huntClueTextSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH45"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH15" />
+
+    <TextView
+        android:id="@+id/huntClueError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/huntErrorMessage"
+        android:textColor="@color/textColorWarning"
+        android:textSize="@dimen/huntErrorMessageSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH45"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toStartOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH50" />
+
+    <ImageButton
+        android:id="@+id/huntClueScan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/allScan"
+        android:onClick="scanBarcode"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV75"
+        app:layout_constraintStart_toEndOf="@id/guideV55"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/all_scan" />
+
+    <ImageButton
+        android:id="@+id/huntClueBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/allBack"
+        android:onClick="goBack"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV45"
+        app:layout_constraintStart_toEndOf="@id/guideV25"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/all_back_red" />
+
+    <TextView
+        android:id="@+id/huntSolvedTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/huntSolvedMessage"
+        android:textSize="@dimen/huntSolvedTitleSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH30"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH20" />
+
+
+    <ImageButton
+        android:id="@+id/huntSolvedNext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/allNext"
+        android:onClick="goNext"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV75"
+        app:layout_constraintStart_toEndOf="@id/guideV55"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/all_next" />
+
+    <ImageButton
+        android:id="@+id/huntSolvedBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/allBack"
+        android:onClick="goBack"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV45"
+        app:layout_constraintStart_toEndOf="@id/guideV25"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/all_back_red" />
+
+    <ImageView
+        android:id="@+id/huntSolvedImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/allImageSpace"
+        android:contentDescription="@string/huntSolvedMessage"
+        app:layout_constraintBottom_toTopOf="@id/guideH60"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH30"
+        app:srcCompat="@drawable/hunt_solved" />
+
+    <ImageView
+        android:id="@+id/huntFinishedImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/allImageSpace"
+        android:contentDescription="@string/huntFinishedTitle"
+        app:layout_constraintBottom_toTopOf="@id/guideH50"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH20"
+        app:srcCompat="@drawable/hunt_finish" />
+
+    <TextView
+        android:id="@+id/huntFinishedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/huntFinishedTitle"
+        android:textSize="@dimen/huntFinishedTitleSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideH60"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH50" />
+
+    <TextView
+        android:id="@+id/huntFinishedMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/huntFinishedMessage"
+        android:textSize="@dimen/huntClueTextSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH80"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH60" />
+
+</android.support.constraint.ConstraintLayout>

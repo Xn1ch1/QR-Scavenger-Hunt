@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Special (DO NOT GENERATE ALTS) -->
+    <item name="allViewEnabled" format="float" type="dimen">1.0</item>
+    <item name="allViewDisabled" format="float" type="dimen">0.3</item>
+    <item name="allViewSemiTransparent" format="float" type="dimen">0.6</item>
+    <item name="setClueRowNumberWeight" formar="float" type="dimen">0.05</item>
+    <item name="setClueRowTextWeight" formar="float" type="dimen">0.8</item>
+    <item name="setClueRowButtonWeight" formar="float" type="dimen">0.12</item>
+
+    <!-- All -->
+    <dimen name="allImageSpace">4dp</dimen>
+    <dimen name="allDialogueBoxText">12sp</dimen>
+
+    <!-- Activity Home -->
+    <dimen name="homeTitleSize">24sp</dimen>
+
+    <!--Activity Set Clues -->
+    <dimen name="setCluesTitleSize">18sp</dimen>
+    <dimen name="setCluesInputTextSize">13sp</dimen>
+    <dimen name="setCluesButtonTextSize">7sp</dimen>
+    <dimen name="setCluesRowNumberSize">18sp</dimen>
+    <dimen name="setCluesRowTextSize">10sp</dimen>
+    <dimen name="setClueRowButtonPadding">5dp</dimen>
+    <dimen name="setClueRowMargin">1dp</dimen>
+    <dimen name="setClueInputPadding">5dp</dimen>
+    <dimen name="setCluesInputButtonText">10sp</dimen>
+
+    <!-- Activity Set Codes -->
+    <dimen name="setCodesTitleSize">16sp</dimen>
+    <dimen name="setCodesTextSize">12sp</dimen>
+    <dimen name="setCodesErrorSize">11sp</dimen>
+
+    <!-- Activity Hunt Codes -->
+    <dimen name="huntClueTitleSize">18sp</dimen>
+    <dimen name="huntClueTextSize">14sp</dimen>
+    <dimen name="huntErrorMessageSize">12sp</dimen>
+    <dimen name="huntSolvedTitleSize">18sp</dimen>
+    <dimen name="huntFinishedTitleSize">18sp</dimen>
+    <dimen name="huntFinishedTextSize">14sp</dimen>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xn1ch1.qrscavengerhunt"
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/allAppName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/appTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ActivitySetClues"
+            android:label="Define Clues"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified" />
+
+        <activity
+            android:name=".BarcodeScan"
+            android:label="Scan Barcode"
+            android:screenOrientation="portrait"
+            android:theme="@style/cameraTheme" />
+
+        <activity
+            android:name=".ActivityHunt"
+            android:label="Hunt Clues"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ActivityHome"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/allAppName"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
+    tools:context=".BarcodeScan">
+
+
+    <include
+        layout="@layout/fragment_guides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.xn1ch1.qrscavengerhunt.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideH10">
+
+        <com.xn1ch1.qrscavengerhunt.ui.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+    </com.xn1ch1.qrscavengerhunt.ui.camera.CameraSourcePreview>
+
+    <ImageView
+        android:id="@+id/borderBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_split_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideH70" />
+
+    <ImageView
+        android:id="@+id/borderLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideH70"
+        app:layout_constraintEnd_toStartOf="@id/guideV5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/appBackgroundLight" />
+
+    <ImageView
+        android:id="@+id/borderRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideH70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideV95"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/appBackgroundDark" />
+
+    <ImageView
+        android:id="@+id/borderTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_split_background"
+        app:layout_constraintBottom_toTopOf="@id/guideH15"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setCluesBackButton"
+        style="@style/ImageButtonCustom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/allBack"
+        android:onClick="scanGoBack"
+        android:src="@drawable/all_back_blue"
+        app:layout_constraintBottom_toTopOf="@id/guideH95"
+        app:layout_constraintEnd_toStartOf="@id/guideV60"
+        app:layout_constraintStart_toEndOf="@id/guideV40"
+        app:layout_constraintTop_toBottomOf="@id/guideH75" />
+
+
+    <TextView
+        android:id="@+id/setCluesTitle"
+        style="@style/TextViewCustom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/scanCode"
+        android:textSize="@dimen/setCluesTitleSize"
+        app:layout_constraintBottom_toTopOf="@id/guideH10"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toStartOf="@id/guideV5"
+        app:layout_constraintTop_toTopOf="@id/guideH5" />
+
+</android.support.constraint.ConstraintLayout>

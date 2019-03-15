@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_split_background"
+    tools:context=".ActivityHome">
+
+    <include layout="@layout/fragment_guides" />
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        style="@style/homeLogo"
+        android:contentDescription="@string/allAppName"
+        app:layout_constraintBottom_toTopOf="@id/guideH50"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/allAppName"
+        android:textSize="@dimen/homeTitleSize"
+        app:layout_constraintEnd_toStartOf="@id/guideV95"
+        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintTop_toBottomOf="@id/guideH55" />
+
+    <ImageButton
+        android:id="@+id/huntButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/homeBeginHunt"
+        android:onClick="goHunt"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV45"
+        app:layout_constraintStart_toEndOf="@id/guideV20"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/home_hunt" />
+
+    <ImageButton
+        android:id="@+id/setButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/homeSetClues"
+        android:onClick="setClues"
+        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintEnd_toStartOf="@id/guideV80"
+        app:layout_constraintStart_toEndOf="@id/guideV55"
+        app:layout_constraintTop_toBottomOf="@id/guideH75"
+        app:srcCompat="@drawable/home_set_clues" />
+
+
+</android.support.constraint.ConstraintLayout>

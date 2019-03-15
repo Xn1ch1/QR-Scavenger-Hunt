@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="allImageSpace">12dp</dimen>
+    <dimen name="huntSolvedTitleSize">54sp</dimen>
+    <dimen name="setCluesButtonTextSize">21sp</dimen>
+    <dimen name="homeTitleSize">72sp</dimen>
+    <dimen name="setCluesNumbersSize">42sp</dimen>
+    <dimen name="huntErrorMessageSize">36sp</dimen>
+    <dimen name="setCodesTextSize">36sp</dimen>
+    <dimen name="setCodesErrorSize">33sp</dimen>
+    <dimen name="huntFinishedTextSize">42sp</dimen>
+    <dimen name="homeButtonTextSize">36sp</dimen>
+    <dimen name="setCodesTitleSize">48sp</dimen>
+    <dimen name="setCluesInputTextSize">39sp</dimen>
+    <dimen name="huntFinishedTitleSize">54sp</dimen>
+    <dimen name="huntClueTitleSize">54sp</dimen>
+    <dimen name="huntClueTextSize">42sp</dimen>
+    <dimen name="setCluesRowNumberSize">54sp</dimen>
+    <dimen name="setCluesRowTextSize">30sp</dimen>
+    <dimen name="allDialogueBoxText">36sp</dimen>
+    <dimen name="setCluesTitleSize">54sp</dimen>
+    <dimen name="setClueRowButtonPadding">15dp</dimen>
+    <dimen name="setClueRowMargin">3dp</dimen>
+    <dimen name="setClueInputPadding">15dp</dimen>
+    <dimen name="setCluesInputButtonText">30sp</dimen>
+</resources>

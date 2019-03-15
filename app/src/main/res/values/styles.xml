@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base Theme for Application -->
+    <style name="appTheme" parent="Theme.AppCompat">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:navigationBarColor">@color/appBackGroundDarker</item>
+        <item name="android:textViewStyle">@style/TextViewCustom</item>
+        <item name="imageButtonStyle">@style/ImageButtonCustom</item>
+
+    </style>
+
+    <!-- Base Theme For Camera -->
+    <style name="cameraTheme" parent="Theme.AppCompat">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/appBackGroundDarker</item>
+        <item name="android:textViewStyle">@style/TextViewCustom</item>
+        <item name="imageButtonStyle">@style/ImageButtonCustom</item>
+    </style>
+
+    <!-- Custom Elements -->
+    <style name="homeLogo">
+        <item name="android:layout_margin">@dimen/allImageSpace</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:src">@drawable/home_logo</item>
+    </style>
+
+    <!-- Default Overrides -->
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+        <item name="android:background">@color/appBackGroundDarker</item>
+    </style>
+
+    <style name="TextViewCustom">
+        <item name="android:fontFamily">@font/advent_pro_bold</item>
+        <item name="android:textColor">@color/textColorNormal</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ImageButtonCustom" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/allImageSpace</item>
+    </style>
+
+</resources>
