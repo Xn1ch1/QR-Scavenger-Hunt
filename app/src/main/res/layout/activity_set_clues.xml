@@ -661,7 +661,7 @@
         android:textColorHint="@color/textColorLighter"
         android:textIsSelectable="true"
         android:textSize="@dimen/setCluesInputTextSize"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@id/guideH50"
         app:layout_constraintEnd_toStartOf="@id/guideV95"
         app:layout_constraintStart_toEndOf="@id/guideV5"

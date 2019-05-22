@@ -81,7 +81,6 @@
         app:layout_constraintStart_toEndOf="@id/guideV5"
         app:layout_constraintTop_toBottomOf="@id/guideH20" />
 
-
     <ImageButton
         android:id="@+id/huntSolvedNext"
         android:layout_width="0dp"
