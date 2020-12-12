@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,8 +11,10 @@
 
     <ImageView
         android:id="@+id/mainLogo"
-        style="@style/homeLogo"
-        android:contentDescription="@string/allAppName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/home_logo"
+        android:contentDescription="@string/appName"
         app:layout_constraintBottom_toTopOf="@id/guideH50"
         app:layout_constraintEnd_toStartOf="@id/guideV95"
         app:layout_constraintStart_toEndOf="@id/guideV5"
@@ -22,35 +24,36 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/allAppName"
+        android:fontFamily="@font/advent_pro_light"
+        android:text="@string/appName"
+        android:textAlignment="center"
         android:textSize="@dimen/homeTitleSize"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/guideV95"
         app:layout_constraintStart_toEndOf="@id/guideV5"
         app:layout_constraintTop_toBottomOf="@id/guideH55" />
 
-    <ImageButton
-        android:id="@+id/huntButton"
+    <ImageView
+        android:id="@+id/hunt"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/homeBeginHunt"
-        android:onClick="goHunt"
+        android:contentDescription="@string/beginHunt"
+        android:src="@drawable/home_hunt"
         app:layout_constraintBottom_toTopOf="@id/guideH90"
         app:layout_constraintEnd_toStartOf="@id/guideV45"
         app:layout_constraintStart_toEndOf="@id/guideV20"
-        app:layout_constraintTop_toBottomOf="@id/guideH75"
-        app:srcCompat="@drawable/home_hunt" />
+        app:layout_constraintTop_toBottomOf="@id/guideH75" />
 
-    <ImageButton
-        android:id="@+id/setButton"
+    <ImageView
+        android:id="@+id/clues"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/homeSetClues"
-        android:onClick="setClues"
+        android:contentDescription="@string/setClues"
+        android:src="@drawable/home_set_clues"
         app:layout_constraintBottom_toTopOf="@id/guideH90"
         app:layout_constraintEnd_toStartOf="@id/guideV80"
         app:layout_constraintStart_toEndOf="@id/guideV55"
-        app:layout_constraintTop_toBottomOf="@id/guideH75"
-        app:srcCompat="@drawable/home_set_clues" />
+        app:layout_constraintTop_toBottomOf="@id/guideH75" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

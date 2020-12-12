@@ -1,82 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/topLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.AppCompat"
-    tools:context=".BarcodeScan">
-
+    android:background="@drawable/ic_split_background"
+    android:fitsSystemWindows="false"
+    android:theme="@style/appTheme"
+    tools:context=".ActivityScanCode">
 
     <include
         layout="@layout/fragment_guides"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.xn1ch1.qrscavengerhunt.ui.camera.CameraSourcePreview
-        android:id="@+id/preview"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideH10">
 
-        <com.xn1ch1.qrscavengerhunt.ui.camera.GraphicOverlay
-            android:id="@+id/graphicOverlay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null" />
-
-    </com.xn1ch1.qrscavengerhunt.ui.camera.CameraSourcePreview>
-
-    <ImageView
-        android:id="@+id/borderBottom"
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/ic_split_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideH70" />
+        app:layout_constraintBottom_toTopOf="@+id/guideH70"
+        app:layout_constraintEnd_toStartOf="@+id/guideV95"
+        app:layout_constraintStart_toEndOf="@+id/guideV5"
+        app:layout_constraintTop_toBottomOf="@+id/guideH15" />
 
     <ImageView
-        android:id="@+id/borderLeft"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/guideH70"
-        app:layout_constraintEnd_toStartOf="@id/guideV5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/appBackgroundLight" />
-
-    <ImageView
-        android:id="@+id/borderRight"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/guideH70"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/guideV95"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/appBackgroundDark" />
-
-    <ImageView
-        android:id="@+id/borderTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_split_background"
-        app:layout_constraintBottom_toTopOf="@id/guideH15"
-        app:layout_constraintEnd_toStartOf="@id/guideV95"
-        app:layout_constraintStart_toEndOf="@id/guideV5"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
         android:id="@+id/setCluesBackButton"
         style="@style/ImageButtonCustom"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/allBack"
-        android:onClick="scanGoBack"
+        android:contentDescription="@string/back"
         android:src="@drawable/all_back_blue"
         app:layout_constraintBottom_toTopOf="@id/guideH95"
         app:layout_constraintEnd_toStartOf="@id/guideV60"
@@ -86,14 +40,28 @@
 
     <TextView
         android:id="@+id/setCluesTitle"
-        style="@style/TextViewCustom"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fontFamily="@font/advent_pro_medium"
         android:text="@string/scanCode"
+        android:textAlignment="center"
         android:textSize="@dimen/setCluesTitleSize"
         app:layout_constraintBottom_toTopOf="@id/guideH10"
         app:layout_constraintEnd_toStartOf="@id/guideV95"
         app:layout_constraintStart_toStartOf="@id/guideV5"
         app:layout_constraintTop_toTopOf="@id/guideH5" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ivFlashControl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="16dp"
+        android:background="@drawable/flash_button_background"
+        android:contentDescription="Turn Flash On or Off"
+        android:padding="12dp"
+        android:src="@drawable/ic_round_flash_on"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraPreview"
+        app:layout_constraintEnd_toEndOf="@+id/cameraPreview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

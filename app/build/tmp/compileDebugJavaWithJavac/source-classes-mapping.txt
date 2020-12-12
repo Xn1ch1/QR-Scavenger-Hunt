@@ -1,0 +1,14 @@
+com/xn1ch1/qrscavengerhunt/databinding/SetClueRowBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.SetClueRowBinding
+com/xn1ch1/qrscavengerhunt/databinding/ActivityHuntBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.ActivityHuntBinding
+com/xn1ch1/qrscavengerhunt/databinding/ActivitySetCluesBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.ActivitySetCluesBinding
+com/xn1ch1/qrscavengerhunt/databinding/FragmentGuidesBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.FragmentGuidesBinding
+com/xn1ch1/qrscavengerhunt/BuildConfig.java
+ com.xn1ch1.qrscavengerhunt.BuildConfig
+com/xn1ch1/qrscavengerhunt/databinding/ActivityScanCodeBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.ActivityScanCodeBinding
+com/xn1ch1/qrscavengerhunt/databinding/ActivityHomeBinding.java
+ com.xn1ch1.qrscavengerhunt.databinding.ActivityHomeBinding

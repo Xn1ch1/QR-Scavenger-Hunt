@@ -1,56 +1,50 @@
 <resources>
 
     <!-- All -->
-    <string name="allAppName">QR Code Hunt</string>
-    <string name="allClueNumberTitle">Clue Number %1$d</string>
-    <string name="allFinish">Finish</string>
-    <string name="allBack">Back</string>
-    <string name="allNext">Next</string>
-    <string name="allScan">Scan</string>
-    <string name="allNumber1">1</string>
-    <string name="allNumber2">2</string>
-    <string name="allNumber3">3</string>
-    <string name="allNumber4">4</string>
-    <string name="allNumber5">5</string>
-    <string name="allNumber6">6</string>
-    <string name="allNumber7">7</string>
-    <string name="allNumber8">8</string>
-    <string name="allNumber9">9</string>
-    <string name="allNumber10">10</string>
-    <string name="allCluePlaceholder">This is placeholder text for where a clue will be. It may be really long or may be really short so this string should be long enough to cover it.</string>
-    <string name="allNo">No</string>
-    <string name="allYes">Yes</string>
+    <string name="appName">QR Code Hunt</string>
+    <string name="clueNumber">Clue Number %1$d</string>
+    <string name="finish">Finish</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="scan">Scan</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num10">10</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
 
     <!-- Activity Home -->
-    <string name="homeBeginHunt">Begin Hunt</string>
-    <string name="homeResumeHunt">Resume Hunt</string>
-    <string name="homeSetClues">Set Clues</string>
-    <string name="homeHuntStarted">The hunt has already started, solve all of the clues to enable this menu.</string>
-    <string name="homeHuntNotStarted">A hunt has not been started.</string>
+    <string name="beginHunt">Begin Hunt</string>
+    <string name="resumeHunt">Resume Hunt</string>
+    <string name="setClues">Set Clues</string>
+    <string name="huntAlreadyStarted">The hunt has already started, solve all of the clues to enable this menu.</string>
+    <string name="huntNotStarted">A hunt has not been started.</string>
 
     <!-- Activity Set Clues -->
-    <string name="setCluesNotSet">Clue Not Set</string>
-    <string name="setCluesResetAll">Reset All</string>
-    <string name="setCluesResetAllWarning">This will reset all clues and assigned codes, are you sure you wish to do this?</string>
-    <string name="setCluesCodeUsed">You have already assigned the code \'%1$s\' to a clue! Use another code.</string>
-    <string name="setCluesRemoveCode">The code \'%1$s\' has already been assigned to this clue, do you wish to remove this and scan another?</string>
-    <string name="setCluesCodeOK">Code \'%1$s\' scanned and assigned to clue %2$d.</string>
-    <string name="setCluesBeginHunt">Are you sure you are ready to save all of the data and begin the hunt?</string>
-    <string name="setCluesCantFinish">There\'s something missing from the data, make sure you leave no gaps in the list.</string>
-    <string name="setCluesDone">Done</string>
-    <string name="setCluesClear">Clear</string>
+    <string name="clueNotSet">Clue Not Set</string>
+    <string name="resetAll">Reset All</string>
+    <string name="resetCluesQuestion">This will reset all clues and assigned codes, are you sure you wish to do this?</string>
+    <string name="alreadyAssigned">You have already assigned the code \'%1$s\' to a clue! Use another code.</string>
+    <string name="removeCode">The code \'%1$s\' has already been assigned to this clue, do you wish to remove this and scan another?</string>
+    <string name="codeAssigned">Code \'%1$s\' scanned and assigned to clue %2$d.</string>
+    <string name="saveAndBegin">Are you sure you are ready to save all of the data and begin the hunt?</string>
+    <string name="clueError">Clue %s has not been set correctly. Both the clue and code need to be filled in</string>
+    <string name="done">Done</string>
+    <string name="clear">Clear</string>
 
     <!-- Hunt -->
-    <string name="huntFinalClueTitle">Final Clue</string>
-    <string name="huntSolvedMessage">Well done!! You\'ve solved the clue and found the code.</string>
-    <string name="huntErrorMessage">This is the wrong code, place it back and keep looking!</string>
-    <string name="huntFinishedMessage">You\'ve solved all the clues. Tap anywhere to finish.</string>
-    <string name="huntFinishedTitle">Congratulations</string>
-
-    <!-- Data Storage -->
-    <string name="dataClueData">hunt_data</string>
-    <string name="dataHuntStarted">hunt_started</string>
-    <string name="dataCurrentClue">hunt_on_clue</string>
+    <string name="finalClue">Final Clue</string>
+    <string name="wellDone">Well done!! You\'ve solved the clue and found the code.</string>
+    <string name="wrongCode">This is the wrong code, place it back and keep looking!</string>
+    <string name="solvedAllClues">You\'ve solved all the clues. Tap anywhere to finish.</string>
+    <string name="congratulations">Congratulations</string>
 
     <!-- Barcode Reading API -->
     <string name="scanCode">Scan Code</string>

@@ -12,7 +12,10 @@
 
     <color name="textColorWarning">#A6032F</color>
 
-    <color name="darkOverlay">#62111111</color>
+    <color name="darkOverlay">#aa111111</color>
     <color name="transparent">#00ffffff</color>
+
+    <color name="barcode_reticle_background">#99000000</color>
+    <color name="barcode_reticle_stroke">#ffffff</color>
 
 </resources>

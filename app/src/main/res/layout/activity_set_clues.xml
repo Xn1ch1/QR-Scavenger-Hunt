@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,577 +15,23 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:clipToPadding="true"
+        android:background="@color/appBackGroundDarker"
         android:fadeScrollbars="false"
-        android:fillViewport="false"
-        android:isScrollContainer="true"
+        android:isScrollContainer="false"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbarStyle="insideOverlay"
-        app:layout_constraintBottom_toTopOf="@id/guideH75"
-        app:layout_constraintEnd_toStartOf="@id/guideV95"
-        app:layout_constraintStart_toEndOf="@id/guideV5"
+        app:layout_constraintBottom_toTopOf="@id/guideH80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideH10">
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
+            android:id="@+id/clueTable"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="@color/appBackGroundDarker"
-                android:orientation="vertical"
-                android:showDividers="middle"
-                android:weightSum="10"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="W,2:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TableRow
-                    android:id="@+id/checkBoxRow0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber0"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber1"
-                        android:text="@string/allNumber1"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText0"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber1"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck0"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber1"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck0"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber1"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber2"
-                        android:text="@string/allNumber2"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber2"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber2"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber2"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber3"
-                        android:text="@string/allNumber3"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber3"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber3"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber3"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber4"
-                        android:text="@string/allNumber4"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber4"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber4"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber4"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber5"
-                        android:text="@string/allNumber5"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber5"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber5"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber5"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber6"
-                        android:text="@string/allNumber6"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber6"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber6"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber6"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber7"
-                        android:text="@string/allNumber7"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber7"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber7"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber7"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber8"
-                        android:text="@string/allNumber8"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber8"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber8"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber8"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber9"
-                        android:text="@string/allNumber9"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber9"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber9"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber9"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/checkBoxRow9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/setClueRowMargin"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_split_background">
-
-                    <TextView
-                        android:id="@+id/setClueNumber9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowNumberWeight"
-                        android:contentDescription="@string/allNumber10"
-                        android:text="@string/allNumber10"
-                        android:textSize="@dimen/setCluesRowNumberSize" />
-
-                    <TextView
-                        android:id="@+id/setClueText9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowTextWeight"
-                        android:contentDescription="@string/allNumber10"
-                        android:ellipsize="end"
-                        android:gravity="start|center_vertical"
-                        android:maxEms="1"
-                        android:maxLines="2"
-                        android:onClick="inputClueText"
-                        android:paddingEnd="@dimen/allImageSpace"
-                        android:text="@string/setCluesNotSet"
-                        android:textSize="@dimen/setCluesRowTextSize" />
-
-                    <ImageButton
-                        android:id="@+id/setClueTextCheck9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber10"
-                        android:onClick="inputClueText"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_clue_text_unchecked" />
-
-                    <ImageButton
-                        android:id="@+id/setClueCodeCheck9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/setClueRowButtonWeight"
-                        android:contentDescription="@string/allNumber10"
-                        android:onClick="setCluesScanBarcode"
-                        android:padding="@dimen/setClueRowButtonPadding"
-                        app:srcCompat="@drawable/set_clue_scan_unchecked" />
-
-                </TableRow>
-
-            </TableLayout>
-
-        </android.support.constraint.ConstraintLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle">
+        </LinearLayout>
 
     </ScrollView>
 
@@ -593,107 +39,130 @@
         android:id="@+id/setCluesTitle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
         android:text="Set Up Hunt"
         android:textSize="@dimen/setCluesTitleSize"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/guideH10"
         app:layout_constraintEnd_toStartOf="@id/guideV95"
         app:layout_constraintStart_toStartOf="@id/guideV5"
-        app:layout_constraintTop_toTopOf="@id/guideH5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/setCluesBackButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/allBack"
-        android:onClick="goBackHome"
+        android:contentDescription="@string/back"
         android:src="@drawable/all_back_blue"
-        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintBottom_toTopOf="@id/guideH95"
         app:layout_constraintEnd_toStartOf="@id/guideV35"
         app:layout_constraintStart_toEndOf="@id/guideV15"
-        app:layout_constraintTop_toBottomOf="@id/guideH80" />
+        app:layout_constraintTop_toBottomOf="@id/guideH85" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/setCluesFinishButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/allFinish"
-        android:onClick="completeSetUp"
+        android:contentDescription="@string/finish"
         android:src="@drawable/all_tick"
-        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintBottom_toTopOf="@id/guideH95"
         app:layout_constraintEnd_toStartOf="@id/guideV85"
         app:layout_constraintStart_toEndOf="@id/guideV65"
-        app:layout_constraintTop_toBottomOf="@id/guideH80" />
+        app:layout_constraintTop_toBottomOf="@id/guideH85" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/setCluesResetButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/setCluesResetAll"
-        android:onClick="resetData"
+        android:contentDescription="@string/resetAll"
         android:src="@drawable/set_clues_reset"
-        app:layout_constraintBottom_toTopOf="@id/guideH90"
+        app:layout_constraintBottom_toTopOf="@id/guideH95"
         app:layout_constraintEnd_toStartOf="@id/guideV60"
         app:layout_constraintStart_toEndOf="@id/guideV40"
-        app:layout_constraintTop_toBottomOf="@id/guideH80" />
+        app:layout_constraintTop_toBottomOf="@id/guideH85" />
 
-    <ImageView
-        android:id="@+id/SetCluesTextInputOverlay"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clueInputOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/darkOverlay"
-        android:onClick="returnTextInput"
-        android:visibility="visible" />
+        android:background="@color/darkOverlay">
 
-    <EditText
-        android:id="@+id/setCluesTextInput"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:autoText="true"
-        android:background="@color/appBackGroundDarker"
-        android:fontFamily="@font/advent_pro_bold"
-        android:gravity="start|top"
-        android:hint="@string/setCluesNotSet"
-        android:imeOptions="actionDone"
-        android:inputType="textMultiLine"
-        android:padding="@dimen/setClueInputPadding"
-        android:textAllCaps="true"
-        android:textColor="@color/textColorLight"
-        android:textColorHint="@color/textColorLighter"
-        android:textIsSelectable="true"
-        android:textSize="@dimen/setCluesInputTextSize"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@id/guideH50"
-        app:layout_constraintEnd_toStartOf="@id/guideV95"
-        app:layout_constraintStart_toEndOf="@id/guideV5"
-        app:layout_constraintTop_toBottomOf="@id/guideH5" />
+        <include
+            layout="@layout/fragment_guides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/setCluesInputClear"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
-        android:background="@color/appBackgroundDark"
-        android:onClick="clearInput"
-        android:text="@string/setCluesClear"
-        android:textColor="@color/textColorLight"
-        android:textSize="@dimen/setCluesInputButtonText"
-        app:layout_constraintBottom_toTopOf="@id/guideH50"
-        app:layout_constraintEnd_toStartOf="@id/guideV80"
-        app:layout_constraintStart_toEndOf="@id/guideV65"
-        app:layout_constraintTop_toBottomOf="@id/guideH45" />
+        <EditText
+            android:id="@+id/setCluesTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/appBackGroundDarker"
+            android:elevation="10dp"
+            android:fontFamily="@font/advent_pro_light"
+            android:gravity="start|top"
+            android:hint="@string/clueNotSet"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/setClueInputPadding"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorLight"
+            android:textColorHint="@color/textColorLighter"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/setCluesInputTextSize"
+            app:layout_constraintBottom_toTopOf="@id/guideH55"
+            app:layout_constraintEnd_toStartOf="@id/guideV90"
+            app:layout_constraintStart_toEndOf="@id/guideV10"
+            app:layout_constraintTop_toBottomOf="@id/guideH15" />
 
-    <TextView
-        android:id="@+id/setCluesInputDone"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/appBackgroundDark"
-        android:onClick="doneInput"
-        android:text="@string/setCluesDone"
-        android:textColor="@color/textColorLight"
-        android:textSize="@dimen/setCluesInputButtonText"
-        app:layout_constraintBottom_toTopOf="@id/guideH50"
-        app:layout_constraintEnd_toStartOf="@id/guideV95"
-        app:layout_constraintStart_toEndOf="@id/guideV80"
-        app:layout_constraintTop_toBottomOf="@id/guideH45" />
+        <TextView
+            android:id="@+id/setCluesInputClear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/appBackgroundDark"
+            android:elevation="5dp"
+            android:fontFamily="@font/advent_pro_light"
+            android:gravity="center"
+            android:text="@string/clear"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/setCluesInputButtonText"
+            app:layout_constraintBottom_toTopOf="@id/guideH60"
+            app:layout_constraintEnd_toStartOf="@id/guideV30"
+            app:layout_constraintStart_toEndOf="@id/guideV10"
+            app:layout_constraintTop_toBottomOf="@id/guideH55" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/setCluesInputCancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/appBackgroundDark"
+            android:elevation="5dp"
+            android:fontFamily="@font/advent_pro_light"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/setCluesInputButtonText"
+            app:layout_constraintBottom_toTopOf="@id/guideH60"
+            app:layout_constraintEnd_toStartOf="@id/guideV50"
+            app:layout_constraintStart_toEndOf="@id/guideV30"
+            app:layout_constraintTop_toBottomOf="@id/guideH55" />
+
+        <TextView
+            android:id="@+id/setCluesInputDone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/appBackgroundDark"
+            android:elevation="5dp"
+            android:fontFamily="@font/advent_pro_light"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/setCluesInputButtonText"
+            app:layout_constraintBottom_toTopOf="@id/guideH60"
+            app:layout_constraintEnd_toStartOf="@id/guideV90"
+            app:layout_constraintStart_toEndOf="@id/guideV50"
+            app:layout_constraintTop_toBottomOf="@id/guideH55" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+	<dimen name="setClueInputPadding">7dp</dimen>
+	<dimen name="barcode_reticle_corner_radius">11.2dp</dimen>
+	<dimen name="setClueRowButtonPadding">7dp</dimen>
+	<dimen name="barcode_reticle_stroke_width">5.6dp</dimen>
+	<dimen name="allImageSpace">5.6dp</dimen>
+	<dimen name="setClueRowMargin">1.4dp</dimen>
+	<dimen name="setClueButtonSize">56dp</dimen>
+	<dimen name="huntSolvedTitleSize">30.8sp</dimen>
+	<dimen name="setCluesButtonTextSize">11.2sp</dimen>
+	<dimen name="homeTitleSize">42sp</dimen>
+	<dimen name="setCluesTitleSize">30.8sp</dimen>
+	<dimen name="huntErrorMessageSize">25.2sp</dimen>
+	<dimen name="setCluesRowTextSize">14sp</dimen>
+	<dimen name="setClueTextSize">25.2sp</dimen>
+	<dimen name="setCodesTextSize">16.8sp</dimen>
+	<dimen name="setCodesErrorSize">15.4sp</dimen>
+	<dimen name="huntFinishedTextSize">28sp</dimen>
+	<dimen name="setCluesInputButtonText">16.8sp</dimen>
+	<dimen name="setCodesTitleSize">22.4sp</dimen>
+	<dimen name="allDialogueBoxText">16.8sp</dimen>
+	<dimen name="setCluesInputTextSize">19.6sp</dimen>
+	<dimen name="huntFinishedTitleSize">36.4sp</dimen>
+	<dimen name="setCluesRowNumberSize">25.2sp</dimen>
+	<dimen name="huntClueTitleSize">42sp</dimen>
+	<dimen name="huntClueTextSize">36.4sp</dimen>
+</resources>

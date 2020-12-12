@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\set_clue_row.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\set_clue_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_hunt.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\activity_hunt.xml"
+    },
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_set_clues.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\activity_set_clues.xml"
+    },
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_guides.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\fragment_guides.xml"
+    },
+    {
+        "merged": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_scan_code.xml",
+        "source": "C:\\Users\\xn1ch\\AndroidStudioProjects\\android-qr-scavenger-hunt\\app\\src\\main\\res\\layout\\activity_scan_code.xml"
+    }
+]
